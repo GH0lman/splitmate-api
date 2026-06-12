@@ -52,7 +52,7 @@ Format: `<type>[optional scope]: <description>`
 - PR title should follow the same convention as commit messages
 - PR description must explain what changed and why
 - Reference the related issue using `Closes #N` or `Part of #N`
-- Review your own PR before merging — check the diff, leave comments on anything non-obvious
+- Review your own PR before merging. Check the differences, leave comments on anything non-obvious
 
 ## Code Style
 
