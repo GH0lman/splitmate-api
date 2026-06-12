@@ -9,10 +9,12 @@ A flat-mate expense splitting Multi-Tenant REST API project where users can setu
 [FastAPI, PostgreSQL, JWT auth, etc.]
 
 ## Architecture
-[Link to schema diagram once it exists]
+[Link to Document](docs/schema-layout.md)
 
 ## Getting Started
 ### Prerequisites
+- Python 3.13+
+- Docker (for local PostgreSQL)
 ### Installation
 ### Environment Variables
 
@@ -24,4 +26,4 @@ A flat-mate expense splitting Multi-Tenant REST API project where users can setu
 ## Deployment
 
 ## Design Decisions
-[Explain any key decisions made on the project's scope]
+[Link to Document](docs/architectural-database-decisions.md)
