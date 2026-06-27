@@ -14,7 +14,7 @@ A flat-mate expense splitting Multi-Tenant REST API project where users can setu
 ## Getting Started
 ### Prerequisites
 - Python 3.13+
-- Docker (for local PostgreSQL 18+)
+- Docker or PostgreSQL (native install on Linux, or Docker on Windows/Mac)
 - Git
 ### Installation
 1. Clone the repository
@@ -44,6 +44,7 @@ A flat-mate expense splitting Multi-Tenant REST API project where users can setu
      -p 5432:5432 \
      -d postgres:18
 ```
+#### The following step is for Docker, if using native PostgreSQL setup the database using the general schema instead.
 
 5. Copy the example environment file and fill in your values
 ```bash
@@ -67,8 +68,8 @@ Copy `.env.example` to `.env` and configure the following:
 | `ENVIRONMENT` | Runtime environment | `development` |
 | `DEBUG` | Enable debug mode and SQL logging | `true` |
 | `SECRET_KEY` | Secret key for token signing | `change-this-in-production` |
-| `DATABASE_URL` | PostgreSQL connection string | `postgresql://postgres:postgres@localhost:5432/splitmate` |
-| `BACKEND_CORS_ORIGINS` | Allowed CORS origins as JSON array | `["http://localhost:3000"]` |
+| `DATABASE_URL` | PostgreSQL connection string | `postgresql://myuser:mypassword@localhost:5432/splitmate` |
+| `BACKEND_CORS_ORIGINS` | Allowed CORS origins as JSON array | `["http://localhost:3000","http://localhost:5173"]` |
 | `JWT_ALGORITHM` | Algorithm used for JWT signing | `HS256` |
 | `ACCESS_TOKEN_EXPIRE_MINUTES` | Access token lifetime | `30` |
 | `REFRESH_TOKEN_EXPIRE_DAYS` | Refresh token lifetime | `7` |
